@@ -23,9 +23,9 @@ export class HomePage implements OnInit{
   }
 
   ngOnInit() {
-    this.estService.getEstudiante()
-    .subscribe( resp => {
-      console.log(resp)
+    this.estService.getEstudiantes()
+    .subscribe( (estudiantes) => {
+      console.log(estudiantes)
     });
   }
 

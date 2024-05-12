@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { EstudianteResponse } from 'src/app/interfaces/EstudianteResponse';
 import { EstudianteService } from 'src/app/services/estudiante.service';
 
 @Component({
@@ -9,6 +10,8 @@ import { EstudianteService } from 'src/app/services/estudiante.service';
 })
 export class HomePage implements OnInit{
 
+  public estudiantes: EstudianteResponse[] = [];
+  
   constructor(
     private navCtrl: NavController,
     private estService: EstudianteService
@@ -24,9 +27,7 @@ export class HomePage implements OnInit{
 
   ngOnInit() {
     this.estService.getEstudiantes()
-    .subscribe( (estudiantes) => {
-      console.log(estudiantes)
-    });
+    .subscribe( estudiantes => this.estudiantes.push(...estudiantes));
   }
 
 }

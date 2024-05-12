@@ -29,6 +29,10 @@ export class LoginEstudiantePage implements OnInit {
   ngOnInit() {
   }
 
+  goToSeleccionChat(){
+    this.navCtrl.navigateForward('/seleccion-chat');
+  }
+
   
   
 

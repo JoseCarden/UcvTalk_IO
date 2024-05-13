@@ -44,17 +44,17 @@ export class LogupEstudiantePage implements OnInit {
     }
 
     var estudiante = {
+      Correo: form.correo,
       Usuario: form.usuario,
       Contra: form.password,
-      Correo: form.correo,
-      genero: parseInt(form.genero)
+      Genero: parseInt(form.genero)
     }
 
     this.estService.postEstudiante(estudiante)
     .subscribe( resp => {
       console.log(resp);
     })
-    
+
     this.navCtrl.navigateBack('/home');
   }
 }

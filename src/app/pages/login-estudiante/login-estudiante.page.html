@@ -10,4 +10,33 @@
       <ion-title size="large">LoginEstudiante</ion-title>
     </ion-toolbar>
   </ion-header>
+
+      <form [formGroup]="formLoginEstudiante">
+        <br>
+        
+        <ion-item>
+          <ion-input 
+            formControlName="usuario"
+            label="Usuario"
+            labelPlacement="floating"
+            placeholder="Ingrese su usuario">
+          </ion-input>
+        </ion-item>
+        <br>
+
+        <ion-item>
+          <ion-input 
+            formControlName="password"
+            label="Contraseña"
+            type="password"
+            labelPlacement="floating"
+            placeholder="Ingrese su contraseña">
+          </ion-input>
+        </ion-item>
+
+      </form><br>
+      
+      <ion-button (click)="goToSeleccionChat()">Ingresar</ion-button>
+
+
 </ion-content>

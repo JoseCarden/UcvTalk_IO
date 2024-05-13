@@ -35,6 +35,14 @@ const routes: Routes = [
     path: 'logup-profesional',
     loadChildren: () => import('./pages/logup-profesional/logup-profesional.module').then( m => m.LogupProfesionalPageModule)
   },
+  {
+    path: 'seleccion-chat',
+    loadChildren: () => import('./pages/seleccion-chat/seleccion-chat.module').then( m => m.SeleccionChatPageModule)
+  },
+  {
+    path: 'chat-pendiente',
+    loadChildren: () => import('./pages/chat-pendiente/chat-pendiente.module').then( m => m.ChatPendientePageModule)
+  },
 ];
 
 @NgModule({

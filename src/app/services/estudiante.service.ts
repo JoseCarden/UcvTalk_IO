@@ -19,7 +19,7 @@ export class EstudianteService {
 
   postEstudiante(estudiante: EstudianteRequest): Observable<EstudianteRequest>{
     return this.http.post<EstudianteRequest>
-    ('http://localhost:3000/estudiante/register',estudiante)
+    ('http://localhost:3000/estudiante/register',estudiante);
   }
 
 }

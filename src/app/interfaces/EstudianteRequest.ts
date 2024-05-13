@@ -1,5 +1,4 @@
-export interface EstudianteResponse {
-    Id_EstudianteRegis: number;
+export interface EstudianteRequest {
     Correo?:             string;
     Usuario:             string;
     Contra:              string;

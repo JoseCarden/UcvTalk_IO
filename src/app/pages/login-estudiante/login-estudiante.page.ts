@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
-import {
-  FormGroup,
-  FormControl, 
-  Validators, 
-  FormBuilder
-} from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder} from '@angular/forms';
 
 @Component({
   selector: 'app-login-estudiante',
@@ -19,7 +14,7 @@ export class LoginEstudiantePage implements OnInit {
   constructor(
     private navCtrl: NavController,
     public fb: FormBuilder
-  ) { 
+  ){ 
     this.formLoginEstudiante = this.fb.group({
       'usuario': new FormControl("",Validators.required),
       'password': new FormControl("",Validators.required),

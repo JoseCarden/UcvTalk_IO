@@ -12,36 +12,32 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'login',
-    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+    path: 'login-administrador',
+    loadChildren: () => import('./pages/login-administrador/login-administrador.module').then( m => m.LoginAdministradorPageModule)
   },
   {
-    path: 'logup',
-    loadChildren: () => import('./pages/logup/logup.module').then( m => m.LogupPageModule)
+    path: 'logup-administrador',
+    loadChildren: () => import('./pages/logup-administrador/logup-administrador.module').then( m => m.LogupAdministradorPageModule)
   },
   {
-    path: 'login-estudiante',
-    loadChildren: () => import('./pages/login-estudiante/login-estudiante.module').then( m => m.LoginEstudiantePageModule)
+    path: 'login-administrador',
+    loadChildren: () => import('./pages/login-administrador/login-administrador.module').then( m => m.LoginAdministradorPageModule)
+  },
+  { 
+    path: 'logup-administrador',
+    loadChildren: () => import('./pages/logup-administrador/logup-administrador.module').then( m => m.LogupAdministradorPageModule)
   },
   {
-    path: 'login-profesional',
-    loadChildren: () => import('./pages/login-profesional/login-profesional.module').then( m => m.LoginProfesionalPageModule)
+    path: 'options',
+    loadChildren: () => import('./pages/options/options.module').then( m => m.OptionsPageModule)
   },
   {
-    path: 'logup-estudiante',
-    loadChildren: () => import('./pages/logup-estudiante/logup-estudiante.module').then( m => m.LogupEstudiantePageModule)
+    path: 'profes-register',
+    loadChildren: () => import('./pages/profes-register/profes-register.module').then( m => m.ProfesRegisterPageModule)
   },
   {
-    path: 'logup-profesional',
-    loadChildren: () => import('./pages/logup-profesional/logup-profesional.module').then( m => m.LogupProfesionalPageModule)
-  },
-  {
-    path: 'seleccion-chat',
-    loadChildren: () => import('./pages/seleccion-chat/seleccion-chat.module').then( m => m.SeleccionChatPageModule)
-  },
-  {
-    path: 'chat-pendiente',
-    loadChildren: () => import('./pages/chat-pendiente/chat-pendiente.module').then( m => m.ChatPendientePageModule)
+    path: 'califica-profes',
+    loadChildren: () => import('./pages/califica-profes/califica-profes.module').then( m => m.CalificaProfesPageModule)
   },
 ];
 

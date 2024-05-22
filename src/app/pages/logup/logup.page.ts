@@ -21,4 +21,8 @@ export class LogupPage implements OnInit {
     this.navCtrl.navigateForward('/logup-profesional');
   }
 
+  goToLogupAdministrador(){
+    this.navCtrl.navigateForward('/logup-administrador');
+  }
+
 }

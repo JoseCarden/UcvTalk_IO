@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
-import { EstudianteResponse } from 'src/app/interfaces/EstudianteResponse';
-import { EstudianteService } from 'src/app/services/estudiante.service';
+import { AdministradorResponse } from 'src/app/interfaces/AdministradorResponse';
+import { AdministradorService } from 'src/app/services/administrador.service';
 
 @Component({
   selector: 'app-home',
@@ -14,15 +14,15 @@ export class HomePage implements OnInit{
   
   constructor(
     private navCtrl: NavController,
-    private estService: EstudianteService
+    private estService: AdministradorService
   ) {}
 
-  goToLogin(){
-    this.navCtrl.navigateForward('/login');
+  goToLoginAdministrador(){
+    this.navCtrl.navigateForward('/login-administrador');
   }
 
-  goToLogup(){
-    this.navCtrl.navigateForward('/logup');
+  goToLogupAdministrador(){
+    this.navCtrl.navigateForward('/logup-administrador');
   }
 
   ngOnInit() {

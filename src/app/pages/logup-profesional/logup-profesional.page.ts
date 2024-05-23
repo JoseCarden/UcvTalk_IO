@@ -74,6 +74,7 @@ export class LogupProfesionalPage implements OnInit {
 
     //Redirección a HOME
     this.navCtrl.navigateBack('/home');
+    /*nuevo cambio*/
   }
 
 }
